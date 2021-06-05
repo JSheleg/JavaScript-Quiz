@@ -1,8 +1,100 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
 button {
-    padding: 10px;
-    margin: 24px;
-    cursor: pointer;
-    font-size: 24px;
-    background-color: #247BA0;
-    color: white;
-  }
+  padding: 10px;
+  margin-top:20px;
+  margin-bottom:20px;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: teal;
+  color: white;
+}
+  
+header{
+  text-align: center;
+  background-color: grey;
+}
+
+.page-title{
+  font-weight:bolder;
+  background-color: teal;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#startGame{
+  display:flex;
+  margin: auto;
+  justify-content: center;
+  margin-top:200px;
+}
+
+
+.rules{
+  font-style:italic;
+  padding:20px;
+}
+
+header p{
+  font-size: 20px;
+}
+
+/* #rules p{
+  font-size: 200px;
+} */
+
+#cta{
+  border-bottom: black;
+  border-bottom-style: solid;
+}
+
+#countdown{
+  /* //float: right; */
+  text-align: center;
+  padding-top: 50px;
+  width:100%;
+  margin-bottom: 50px;
+  
+}
+
+#A,
+#B,
+#C,
+#D{
+  width:100%;
+
+}
+
+
+.question-wrapper h2{
+  font-weight:bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.highscore-wrapper{
+  margin-top:150px;
+}
+
+form{
+  text-align: center;
+  margin:50px;
+  font-size: 24px;
+}
+
+form button{
+ width: 100%;
+}
+
+#card p{
+  font-size: 24px;
+  text-align:center;
+}
+
+  

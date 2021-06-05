@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Code Quiz</title>
+    <title>JavaScript Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header id = "welcome">
-        <h1 class = "page-title">Java Code Challenge</h1>
-        <h2> I will ask you a series of questions correct within the time given to reach the high score?</h2>
+        <h1 class = "page-title">JavaScript Code Challenge</h1>
+        <h2 class = "rules"> I will ask you a series of questions correct within the time given to reach the high score?</h2>
         <p> The rules are simple: 10 multiple choices questions in 100 seconds. Everytime you get a correct answer, you get a point, but if you get an answer wrong, you'll loose 10 seconds and lose a point</p>
-        <p> Are you game?</p>
+        <p id = 'cta'> Are you game?</p>
     </header>
 
     <div class = "container">
@@ -20,21 +20,40 @@
     <div>
        
     <main class = "page-content" id = "page-content"> 
-        <h2 id ="countdown"></h2>
-        <h2>Current score: "<span id="count">0</span>"</h2>  
+        
+        <h2 id = "countdown" style="display:none"><span id="count"></span></h2>  
         <!--Questions-->
-        <section class="question-wrapper">
-            <!--This is where the questions will show up-->
-        <section>
+        <div class="question-wrapper">
+            <h2 id = "prompt" style = "display:none">Quest</h2>
+        <div>
+        
         <!--Buttons with choices for answer-->
-        <section class="multiple-choice-wrapper">
-            
-            <!--<button id = A>A:</button>
+        <div id="multiple-choice-wrapper" style = "display:none">
+            <button id = A>A:</button>
             <button id = B>B:</button> 
             <button id = C>C:</button>
             <button id = D>D:</button>
-            multiple choice questions will show up in these div-->
-        </section>
+        </div>
+        <div class = highscore-wrapper>
+            <h2 id = "final">Final score: "<span id= "final">0</span>"</h2>
+            <form>
+              <label for = "name">Enter Initials:</label>  
+              <input 
+                type = "text"
+                name = "initials"
+                id = "initials"
+                placeholder="abc"
+                />
+                <button id = "submitInitials">Submit</button>
+                <button id = "seeHighScores" >See High Scores</button>
+            </form>
+            <div id = "card" style= "display:none">
+                <h2>Current High Score:</h2><br />
+                <p><strong>Highscore: </strong><span id = "highscore"></span></p><br />
+                <p><strong>Player's Initials:</strong><span id = "hsinitials"></span></p><br />
+            </div>
+            
+        </div>
 
     </main>
     <script src="./assets/js/script.js"></script>
