@@ -60,14 +60,7 @@ var questions = [
     }
 ];
 
-// var myscore = {
-//     //score: score,
-//     // init: init
-// }
-//var init = initials.value.trim();
-
 //Initialized variables
-
 var timer = document.getElementById('countdown');
 var start = document.querySelector("#startGame");
 var quest = document.getElementById('prompt');
@@ -81,10 +74,6 @@ var highScoreBtn = document.getElementById('seeHighScores');
 var highScoreSpan = document.getElementById('highscore');
 var intialsSpan = document.getElementById('hsinitials');
 var submitButton = document.querySelector('#submitInitials');
-
-
-
-
 var qCounter = -1;
 var finalAnswer;
 var userScore = 0;
@@ -184,7 +173,6 @@ var solutions = function(){
         if(score === 0){
             alert("You lost the game")
             timeLeft = 0;
-            // clearInterval(timeInterval);
         }
         //incorrect answer, but score is not zero
         else{
@@ -199,7 +187,7 @@ var solutions = function(){
                 userScore = score;
                 finalScore.textContent = "Final Score: " + userScore;
                 saveHighScore();
-                //clear timer
+                timeLeft = 0;
             }
             //incorrect answer, but you have time to redeem yourself with the next question
             else{
@@ -265,9 +253,7 @@ start.addEventListener("click",function(){
     countdown();
     alert("start button has been clicked");
     document.getElementById("welcome").style.display = "none";
-    document.getElementById("startGame").style.display = "none";
-    //document.getElementById('multiple-choice-wrapper').style.display = "block";
-    
+    document.getElementById("startGame").style.display = "none";    
     qCounter ++;
     ShowAndHide();
     establishButtons();
