@@ -12,6 +12,7 @@
 
 ## Links:
     * JavaScript Coding Quiz Repository: https://github.com/JSheleg/javascript-quiz
-    * Test your Luck: https://jsheleg.github.io/javascript-quiz/
+    * Test your Luck at: https://jsheleg.github.io/javascript-quiz/
 
-![QuizLandingPage]()
+![QuizLandingPage](https://github.com/JSheleg/javascript-quiz/blob/main/assets/img/ChallengeScreen.JPG)
+
