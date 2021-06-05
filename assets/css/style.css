@@ -5,7 +5,6 @@
   
 }
 
-
 button {
   padding: 10px;
   margin-top:20px;
@@ -45,17 +44,12 @@ header p{
   font-size: 20px;
 }
 
-/* #rules p{
-  font-size: 200px;
-} */
-
 #cta{
   border-bottom: black;
   border-bottom-style: solid;
 }
 
 #countdown{
-  /* //float: right; */
   text-align: center;
   padding-top: 50px;
   width:100%;
